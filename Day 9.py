@@ -1,6 +1,6 @@
 import re
 
-file = open("Day 9 Input.txt", 'r')
+file = open(r"Inputs\Day 9 Input.txt", "r")
 
 data = file.read()
 
