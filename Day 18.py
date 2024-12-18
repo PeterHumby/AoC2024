@@ -81,9 +81,11 @@ def gen_maze(x, y, grid): # Generate a graph from a grid starting at x, y.
 ends = gen_maze(x, y, grid)
 last_byte = [0,0]
 
+print(min([x[2] for x in ends]))
+print("--- Part 1: %s seconds ---" % (time.time() - start_time))
 while len(ends) != 0:
     grid, last_byte = add_byte(grid)
     ends = gen_maze(x, y, grid)
 
 print(last_byte)
-print("--- %s seconds ---" % (time.time() - start_time))
+print("--- Part 2: %s seconds ---" % (time.time() - start_time))
